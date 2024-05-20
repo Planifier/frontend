@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.task {
+	@apply step px-3 hover:cursor-pointer hover:bg-primary transition-all duration-300 ease-out rounded-md;
+}
+
+.finished-task {
+	@apply step step-primary px-3 hover:cursor-pointer hover:bg-primary transition-all duration-300 ease-out rounded-md;
+}
+
+.notification {
+	@apply join items-center justify-start min-w-fit gap-5 mt-5 ml-5;
+}
+
+.milestone-notification {
+	@apply join items-center justify-start min-w-fit gap-5 mt-5 ml-2 bg-success bg-opacity-25 p-3 rounded-md rounded-r-none xl:rounded-r-md;
+}
+
+.expensive-notification {
+	@apply join items-center justify-start min-w-fit gap-5 mt-5 ml-2 bg-warning bg-opacity-25 p-3 rounded-md rounded-r-none xl:rounded-r-md;
+}
+
+.role-comp {
+	@apply font-mono;
+	@apply text-primary-content text-3xl font-bold flex items-center gap-2 bg-primary px-2 py-1 rounded-md transition-all duration-100 select-none;
+	@apply hover:opacity-60 hover:cursor-pointer hover:bg-error hover:line-through;
+}
